@@ -1,0 +1,21 @@
+1. ubahlah bahasa prolog berikut menjadi bahasa natural:
+	a. Dian adalah seseorang
+	b. Atoz merupakan merek mobil
+	c. Dian menyukai merek mobil Atoz
+	d. Atoz dapat di jual
+	e. X dapat membeli Y
+		jika X adalah seseorang
+		dan Y adalah merek sebuah mobil
+		dan X menyukai Y
+		dan Y dapat di jual
+	f. Setiap orang menyukai apa
+2. ubahlah bahasa natural berikut menjadi bahasa prolog:
+	a. hobi(Ricky,catur).
+	b. orang(Embang,malas).
+	c. orang(Yusida,vegetarian).
+	d. pandai(Kusdiar,gitar).
+	e. merah(mobil,sadek),bmw(merek).
+	f. orang(Awan,piano),pontianak(berasal,jawa).
+	g. baik(orang):-penyayang(sifat),dermawan(sifat).
+	h. pintar(orang):-nilai_tinggi(matematika);nilai_tinggi(ipa);nilai_tinggi(ips).
+	i. mati(_).

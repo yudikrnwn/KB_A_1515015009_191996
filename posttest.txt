@@ -1,0 +1,14 @@
+implement dan end implement = Di antara semua kata kunci yang dibahas di sini, ini adalah satu-satunya, yang ada sebagai pasangan. 
+			      Visual Prolog memperlakukan kode yang ditulis antara dua kata kunci tersebut sebagai kode milik satu kelas. 
+			      Nama kelas harus diberikan setelah menerapkan kata kunci.
+open 		= Kata kunci ini digunakan untuk memperluas visibilitas lingkup kelas. 
+       		  Hal ini untuk digunakan hanya setelah menerapkan kata kunci.
+constants 	= Kata kunci ini digunakan untuk menandai bagian dari kode yang mendefinisikan beberapa nilai yang umum digunakan dalam kode program. 
+	    	  Misalnya, jika string literal "PDC Prolog" yang akan digunakan di beberapa lokasi di seluruh kode, maka Anda dapat menentukan mnemonic (pendek-bentuk, kata mudah diingat) untuk sama.
+Domains 	= Kata kunci ini digunakan untuk menandai bagian menyatakan domain yang akan digunakan dalam kode.
+Class facts 	= Kata kunci ini menunjuk bagian, yang menyatakan fakta-fakta yang akan digunakan nanti dalam kode program.
+predicates	= Bagian ini berisi deklarasi predikat yang akan kemudian didefinisikan dalam bagian klausa kode.
+Clauses 	= Memberikan fakta-fakta yang ada untuk memberikan gambaran kepada VPE dalam melakukan pengujian untuk mencari solusi dari pertanyaan yang diberikan.
+Goal		= Menampilkan hasil eksekusi dari program yang telah dibuat.
+Nondeterm 	= Menentukan bahwa kemungkinan ada sejumlah fakta dari suatu predikat sepanjanng program berjalan(default).
+Global    	= Menentukan bahwa setion fact adalah global dalam program.
