@@ -1,0 +1,32 @@
+clauses
+  buy_car(Model,Color):-
+	car(Model,Color,Price),
+	colors(Color,sexy),!,
+	Price > 25000.
+
+  car(maserati,green,25000).
+  car(corvette,black,24000).
+  car(corvette,red,26000).
+  car(porsche,red,24000).
+
+  colors(red,sexy).
+  colors(black,mean).
+  colors(green,preppy).
+
+goal
+  buy_car(corvette,Y).
+
+*program di atas untuk mencari warna dari sebuah mobil, warna yang di inginkan yaitu warna yang sexy.
+*syarat dari mobil yang ingin di cari adalah mobil harus memiliki model, warna dan harga. warna harus tergolong sexy yaitu warna merah.
+ dan harganya lebih dari 25000, karna ada fungsi not maka aturan harga tidak perlu di jalankan.
+*saat program di jalankan goalnya adalah buy_car(corvette,Y).  
+
+   -car(maserati,green,25000).   pernyataan ini memenuhi syarat awal yaitu car memiliki model, warna, dan harga
+                                 namun warna pada pernyataan ini adalah green yang bukan merupakan warna sexy
+                                 program akan melakukan backtrack atau lacak balik.
+   -car(corvette,black,24000).   pernyataan kedua juga memenuhi syarat awal yang memiliki model, warna, dan harga
+                                 tapi warna pada pernyataan kedua adalah black yg juga bukan warna sexy
+                                 program melakukan backtrack lagi untuk mencari fakta yang lain.
+   -car(corvette,red,26000).     pada pernyataan ini semua kriteria yang di cari pada goal terpenuhi yaitu
+                                 car  memiliki model corvette, berwarna sexy yaitu red.
+                                 setelah goal di temukan maka program berhenti dan menampilkan Y=red.
