@@ -1,0 +1,19 @@
+DOMAINS
+benda = buku(judul, pengarang) ;%pendeklarasian buku yang memiliki 2 informasi yaitu judul dan pengarang
+kuda(nama) ; kapal ;%pedeklarasian kuda yang memiliki nama dan deklarasi sebuah kapal.
+bukubank(saldo)%bukubank memiliki informasi saldo
+judul, pengarang, nama = symbol
+saldo = real
+PREDICATES
+nondeterm milik(nama,benda)
+
+CLAUSES
+milik(erwin, buku("Markesot Bertutur", "Emha Ainun Najib")).
+milik(erwin, kuda(buraq)).
+milik(erwin, kapal).
+milik(erwin, bukubank(1000)).
+GOAL
+milik(erwin, Benda).
+%goal di sini nanti akan menampilkan apasaja yang di miliki oleh erwin
+%pada clauses erwin memiliki buku, kuda, kapal, dan bukubank.
+%semua informasi itu nanti akan di tampilkan dengan variabel benda.
